@@ -103,10 +103,8 @@ nav a:hover {
 .menu {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(25, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     text-align: center;
-    gap: 20px;
-    padding: 50px 20px 50px 20px;
     background-color: #5C352C;
     grid-column-gap:10px;
 }
@@ -116,6 +114,7 @@ nav a:hover {
     text-align: center;
     padding-top: 20px;
     font-size: 25px;;
+    align-self: center;
 }
 
 
@@ -124,16 +123,17 @@ nav a:hover {
     align-self: center;
     background-color: #956959;
     padding: 60px 10px 60px 10px;
-    border-radius: 20px;
+    border-radius: 60px;
     align-items: center;
     text-decoration: none;
     color:#E9B48A;
 
 }
-.menu-item1 img{
+ .foto{
     width: 300px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 20px;
+    
 }
 .text{
     text-align: center;
@@ -147,91 +147,54 @@ nav a:hover {
     align-self:center;
     padding: 60px 10px 60px 10px;
     background-color: #956959;
-    border-radius: 20px;
+    border-radius: 60px;
     align-items: center;
     text-decoration: none;
     color:#E9B48A;
 }
-.menu-item3 img{
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
+
+.menu-item4{
+    grid-area: 4/2/7/5;
+    align-self: center;
+    background-color: #956959;
+    padding: 60px 10px 60px 10px;
+    border-radius: 60px;
+    align-items: center;
+    text-decoration: none;
+    color:#E9B48A;
 }
 
 .menu-item5{
-    grid-area: 9/2/10/3;
+    grid-area: 4/6/7/9;
+    align-self: center;
     background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}
+    padding: 60px 10px 60px 10px;
+    border-radius: 60px;
+    align-items: center;
+    text-decoration: none;
+    color:#E9B48A;
+}   
+
 .menu-item6{
-    grid-area: 9/4/10/6;
+    grid-area: 7/2/9/5;
+    align-self: center;
     background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 60px 10px 60px 10px;
+    border-radius: 60px;
+    align-items: center;
+    text-decoration: none;
+    color:#E9B48A;
 }
 .menu-item7{
-    grid-area: 11/2/13/3;            
+    grid-area: 7/6/9/9;
+    align-self: center;
     background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}   
-.menu-item8{
-    grid-area: 11/4/13/6;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}   
-.menu-item9{
-    grid-area: 14/2/16/3;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 60px 10px 60px 10px;
+    border-radius: 60px;
+    align-items: center;
+    text-decoration: none;
+    color:#E9B48A;
 }
-.menu-item10{
-    grid-area: 14/4/16/6;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}
-.menu-item11{
-    grid-area: 17/2/19/3;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}
-.menu-item12{
-    grid-area: 17/4/19/6;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}
-.menu-item13{
-    grid-area: 20/2/22/3;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}
-.menu-item14{
-    grid-area: 20/4/22/6;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}
-.menu-item15{
-    grid-area: 23/2/25/3;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}
-.menu-item16{
-    grid-area: 23/4/25/6;            
-    background-color: #956959;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-
 footer {
     background-color: #2A1713;
     color: #E9B48A;
