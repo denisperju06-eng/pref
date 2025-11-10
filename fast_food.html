@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fast_food_style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div>
+                <a href="main.html" class="logo">
+                    Preferences
+                </a>
+            </div>
+            <nav>
+                <a href="main.html">Home</a>
+                <a href="#menu-item">Menu</a>
+                <a href="#footer">Contact</a>
+                <a href="#cart" class="cart">Cart
+                    <span class="position"></span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="sales">
+            <div class="left"><img src="foto/fast_food/sales.jpeg" alt="sales"></div>
+            <div class="right">
+                <h2>
+                    <div><mark><del>15$</del></mark></div>
+                    <div><b> Only today <mark>12.49$</mark></b></div>
+                </h2>
+                <h3>Combo 3 in 1</h3>
+                <div class="pepsi-sale">Pepsi <span>250ml</span></div>
+                <div class="burger-sale">Burger <span>300g</span></div>
+                <div class="french-fries-sale">French Fries <span>500g</span></div>
+            </div>
+        </section>
+        <h2 id="menu-item" class="menu-title">Choose your taste</h2>
+        <section class="menu">
+            <div class="burger">Burgers</div>
+            <form action=".menu">
+                <input type="checkbox" name="burger" id="burger"><label for="burger" class="burgerlabel">Burger</label>
+                <div class="popup-burger">
+                    <div class="popup-content-burger">
+                        <label for="burger" class="close">&times;</label>
+                        <h2>hello</h2>
+                        <p>hello</p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
