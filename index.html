@@ -1,111 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preferences</title>
+    <title>Preferences Restaurant</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <header>
-        <div class="header-container">
-            <div>
-                <a href="index.html" class="logo">
-                    Preferences
-                </a>
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#menu-item1">Menu</a>
-                <a href="#footer">Contact</a>
-            </nav>
+
+<header class="navbar">
+    <div class="logo">PREFERENCES</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#menu-section">Menu</a>
+        <a href="#footer">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Experience<br>flavor,<br>wherever<br>you are</h1>
+        <a class="btn-primary" href="#menu-section">VIEW MENU</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="foto/next-photo/steak-plate.png" alt="Steak plate">
+    </div>
+</section>
+
+<section class="menu-section" id="menu-section">
+    <h2>Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="foto/next-photo/fast-food.jpg" alt="Fast Food">
+            <h3>Fast Food</h3>
+            <p>Chaice de gambour; rose-ticked recipes</p>
         </div>
-    </header>
 
-    <main>
-        <section class="hello">
-            <div>
-                <h1>Experience flavor, wherever you are.</h1>
-                <p>Your City, Our Route.</p>
-                <a href="#menu-item1">Explore</a>
-            </div>
-        </section>
-
-        <section class="menu">
-            <div class="menu-header">
-                <h2 id="menu-item1">Choose the menu</h2>
-            </div>
-            <a class="menu-fast-food" id="sector" href="fast_food.html">
-                <img class="foto" src="foto/fast_food/images.jpeg" alt="Menu Item 1">
-                <div class="text">
-                    <h2>Fast Food</h2>
-                </div>
-            </a>
-            <a class="menu-sushi" id="sector" href="#">
-                <img class="foto" src="foto/gourmet_starters/sushi.webp" alt="Menu Item 2">
-                <div class="text">
-                    <h2>Sushi</h2>
-                </div>
-            </a>
-            <a class="menu-salad" id="sector" href="#">
-                <img class="foto" src="foto/gourmet_starters/salad.jpg" alt="Menu Item 3">
-                <div class="text">
-                    <h2>Salad</h2>
-                </div>
-            </a>
-            <a class="menu-gourmet-starters" id="sector" href="#">
-                <img class="foto" src="foto/gourmet_starters/1_Gourmet_Starters.jpeg" alt="Menu Item 4">
-                <div class="text">
-                    <h2>Gourmet Starters</h2>
-                </div>
-            </a>
-
-            <a class="menu-dessert" id="sector" href="#">
-                <img class="foto" src="foto/gourmet_starters/cake.jpeg" alt="Menu Item 5">
-                <div class="text">
-                    <h2>Dessert</h2>
-                </div>
-            </a>
-            <a class="menu-cocktails" id="sector" href="#">
-                <img class="foto" src="foto/gourmet_starters/drinks.jpg" alt="Menu Item 6">
-                <div class="text">
-                    <h2>Cocktails</h2>
-                </div>
-            </a>
-        </section>
-
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Preferences</h3>
-                <p>Mâncare delicioasă, livrare rapidă</p>
-                <p>Rețele sociale</p>
-                <div class="social-media">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>📞 +373 78 18 10 50</p>
-                <p>📍 Bălți, Moldova</p>
-                <p>🏘️str. Bulgară 136</p>
-            </div>
-            <div class="footer-section">
-                <h3>Program</h3>
-                <p>Luni - Vineri: 06:00 - 22:00</p>
-                <p>Sâmbătă - Duminică: 07:00 - 23:00</p>
-            </div>
+        <div class="card">
+            <img src="foto/next-photo/sushi-plate.jpeg" alt="Sushi">
+            <h3>Sushi</h3>
+            <p>We use only the freshest ingredients to create</p>
         </div>
-        <div id="footer" class="footer-container">
-            <span>&copy; 2025 Preferences. All rights reserved.</span>
+
+        <div class="card">
+            <img src="foto/next-photo/dessert.jpg" alt="Dessert">
+            <h3>Dessert</h3>
+            <p>Our menu enterany options to satisy</p>
         </div>
-    </footer>
+
+        <div class="card">
+            <img src="foto/next-photo/pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Traditional, classic, and signature hand-tossed flavors</p>
+        </div>
+
+        <div class="card">
+            <img src="foto/next-photo/salad.jpg" alt="Salad">
+            <h3>Fresh Salads</h3>
+            <p>Made with crisp vegetables and light homemade dressing</p>
+        </div>
+
+        <div class="card">
+            <img src="foto/next-photo/drinks.jpg" alt="Drinks">
+            <h3>Drinks</h3>
+            <p>Refreshing beverages and fresh juices</p>
+        </div>
+
+    </div>
+</section>
+
+
+<footer class="info-section" id="footer">
+    <div>
+        <h2>Why Choose Us</h2>
+        <p>
+            We use only the freshest ingredients to create mouth-watering dishes.
+            Our menu includes a variety of options to satisfy every craving.
+        </p>
+    </div>
+
+    <div>
+        <h2>Contact</h2>
+        <p>Monday – Friday &nbsp;&nbsp; 19:00 AM – 10:00 PM</p>
+        <p>1234 Restaurant St, City, State 12345</p>
+        <p>(125) 456-7880</p>
+    </div>
+</footer>
+
 </body>
-
 </html>
