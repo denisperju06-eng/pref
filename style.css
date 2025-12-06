@@ -59,13 +59,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 8%;
+    padding: 40px 8% 60px 8%;
+    margin:0;
 }
 
 .hero-text h1{
     font-size: 64px;
     line-height: 1.1;
-    margin: 50px 0;
+    margin: -15px 0 50px 0;
 }
 
 .btn-primary{
