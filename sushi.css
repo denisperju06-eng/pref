@@ -1,0 +1,125 @@
+:root{
+    --page-bg-color: #FAF4EB;
+    --page-bg-light: #FFFBF5;
+    --text-color: #2F241F;
+    --hover-nav:#C65A3E;
+    --underheader:#4A3A36;
+    --button-bg:#C65A3E;
+    --button-text-bg-color: #FFFFFF;
+    --button-text-hover-bg-color: #B04930;
+    --card-border-bg-color:#E9E3DA;
+    --card-title:#2F241F;
+    --card-text:#6B5A55;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: var(--page-bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    font-size: 18px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 35px;
+}
+
+header a:hover {
+    color: var(--hover-nav);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+}
+
+.hero-text h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 14px 34px;
+    background-color: var(--button-bg);
+    color: var(--button-text-bg-color);
+    border-radius: 6px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--button-text-hover-bg-color);
+}
+
+.hero-img {
+    width: 420px;
+    border-radius: 14px;
+}
+
+.section-title {
+    font-size: 42px;
+    padding-left: 60px;
+    margin-top: 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+.card {
+    background-color: var(--page-bg-light);
+    border: 1px solid var(--card-border-bg-color);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    color: var(--card-title);
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 17px;
+    color: var(--card-text);
+    line-height: 1.5;
+}
+
+footer {
+    padding: 60px;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 800px;
+}
