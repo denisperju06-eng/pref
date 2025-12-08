@@ -16,7 +16,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: Georgia, serif;
 }
 
@@ -64,8 +64,9 @@ body{
 }
 
 .hero-text h1{
-    font-size: 64px;
+    font-size: 62px;
     line-height: 1.1;
+    max-width: 500px;
     margin: -15px 0 50px 0;
 }
 
@@ -87,11 +88,11 @@ body{
 }
 
 .hero-img img{
-    width: 450px;
+    width: 400px;
+    scale:1.5;
     height: auto;
-    scale:1.2;
-    margin-right:25px;
     border-radius: 50%;
+    margin-right:40px;
     object-fit: cover;
     background: none;
 }
@@ -155,7 +156,6 @@ body{
 }
 
 @media (max-width: 1024px) {
-
     .navbar {
         padding: 25px 5%;
     }
@@ -199,7 +199,6 @@ body{
 }
 
 @media (max-width: 768px) {
-
     .navbar {
         flex-direction: column;
         text-align: center;
