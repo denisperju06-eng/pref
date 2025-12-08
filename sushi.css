@@ -139,7 +139,7 @@ body{
 
 /* INFO SECTION */
 .info-section{
-    background-color: var(--page-bg-light);
+    background-color: var(--page-bg-color);
     padding: 50px 8%;
     display: flex;
     justify-content: space-between;
