@@ -1,78 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preferences sushi</title>
-    <link rel="stylesheet" href="sushi.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences-sushi</title>
+    <link rel="stylesheet" href="sushi.css">
 </head>
 <body>
 
-<header>
+<header class="navbar">
     <div class="logo">PREFERENCES</div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Contact</a>
+        <a href="#">Home</a>
+        <a href="#menu-section">Menu</a>
+        <a href="#footer">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
     <div class="hero-text">
-        <h1>Our Menu</h1>
-        <p>
-            Discover a variety of freshly prepared dishes inspired by
-            traditional Japanese cuisine, crafted with premium ingredients and
-            exceptional care.
-        </p>
-        <button class="btn">Order Now</button>
+        <h1>Experience<br>flavor,<br>wherever<br>you are</h1>
+        <a class="btn-primary" href="#menu-section">VIEW MENU</a>
     </div>
-    <img
-            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
-            class="hero-img"
-    />
+
+    <div class="hero-img">
+        <img src="foto/next-photo/steak-plate.png" alt="Steak plate">
+    </div>
 </section>
 
-<h2 class="section-title">Popular Dishes</h2>
+<section class="menu-section" id="menu-section">
+    <h2>Menu</h2>
 
-<div class="cards">
-    <div class="card">
-        <img
-                src="https://images.unsplash.com/photo-1553621042-f6e147245754"
-                class="card-img"
-        />
-        <div class="card-content">
-            <h3>Salmon Nigiri</h3>
-            <p>Fresh salmon gently pressed over sushi rice.</p>
+    <div class="menu-grid">
+
+        <div class="card">
+            <a href="sushi.html">
+                <img src="foto/next-photo/fast-food.jpg" alt="Fast Food">
+                <h3>Burger</h3>
+                <p>Chaice de gambour; rose-ticked recipes</p>
+            </a>
         </div>
+
+        <div class="card">
+            <a href="sushi.html">
+                <img src="foto/next-photo/sushi-plate.jpeg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>We use only the freshest ingredients to create</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="sushi.html">
+                <img src="foto/next-photo/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Traditional, classic, and signature hand-tossed flavors</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="sushi.html">
+                <img src="foto/next-photo/fresh-salads.jpg" alt="Salad">
+                <h3>Fresh Salads</h3>
+                <p>Made with crisp vegetables and light homemade dressing</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="sushi.html">
+                <img src="foto/next-photo/dessert.jpg" alt="Dessert">
+                <h3>Dessert</h3>
+                <p>Our menu enterany options to satisy</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="sushi.html">
+                <img src="foto/next-photo/drinks.jpg" alt="Drinks">
+                <h3>Drinks</h3>
+                <p>Refreshing beverages and fresh juices</p>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<footer class="info-section" id="footer">
+    <div>
+        <h2>Why Choose Us</h2>
+        <p>
+            We use only the freshest ingredients to create mouth-watering dishes.
+            Our menu includes a variety of options to satisfy every craving.
+        </p>
     </div>
 
-    <div class="card">
-        <img
-                src="https://images.unsplash.com/photo-1604908176920-6ec2e32d3cf2"
-                class="card-img"
-        />
-        <div class="card-content">
-            <h3>California Roll</h3>
-            <p>Crab, avocado, cucumber, rolled in sesame rice.</p>
-        </div>
+    <div>
+        <h2>Contact</h2>
+        <p>Monday – Friday &nbsp;&nbsp; 07:00 – 23:00</p>
+        <p>or. Bălți, str. Strada Ștefan cel Mare </p>
+        <p>+373 78 18 10 50</p>
     </div>
-
-    <div class="card">
-        <img
-                src="https://images.unsplash.com/photo-1562158070-57d1fc3b28a9"
-                class="card-img"
-        />
-        <div class="card-content">
-            <h3>Tempura Udon</h3>
-            <p>Thick wheat noodles served with crispy tempura.</p>
-        </div>
-    </div>
-</div>
-
-<footer>
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-    doloremque laudantium.
 </footer>
 
 </body>
