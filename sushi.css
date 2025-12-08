@@ -29,7 +29,6 @@ body{
     color: var(--text-color);
 }
 
-/* NAVBAR */
 .navbar{
     padding: 30px 8%;
     display: flex;
@@ -54,7 +53,6 @@ body{
     color: var(--hover-nav);
 }
 
-/* HERO SECTION */
 .hero{
     display: flex;
     align-items: center;
@@ -137,7 +135,6 @@ body{
     margin: 0 15px 10px;
 }
 
-/* INFO SECTION */
 .info-section{
     background-color: var(--page-bg-color);
     padding: 50px 8%;
