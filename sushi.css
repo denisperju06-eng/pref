@@ -34,6 +34,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .logo{
@@ -87,7 +88,7 @@ body{
 
 .hero-img img{
     width: 400px;
-    scale:1.5;
+    scale:1.2;
     height: auto;
     border-radius: 50%;
     margin-right:40px;
