@@ -1,0 +1,373 @@
+:root{
+    --page-bg-color: #FAF4EB;
+    --page-bg-light: #FFFBF5;
+    --text-color: #2F241F;
+    --hover-nav:#C65A3E;
+    --underheader:#4A3A36;
+    --button-bg:#C65A3E;
+    --button-text-bg-color: #FFFFFF;
+    --button-text-hover-bg-color: #B04930;
+    --card-border-bg-color:#E9E3DA;
+    --card-title:#2F241F;
+    --card-text:#6B5A55;
+    --footer-text:#9e9e9e;
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--page-bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+header{
+    width: 85%;
+    padding-top: 2em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    width: 85%;
+
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+nav a{
+    font-size: 1.2em;
+    color: var(--text-color);
+    transition: 0.2s;
+}
+
+nav a:hover{
+    color: var(--hover-nav);
+}
+
+.buttonsSide{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.intro-text h1{
+    font-size: 4em;
+    line-height: 1.1;
+}
+
+.btn-primary button{
+    background: var(--button-bg);
+    padding: 0.88em 1.75em;
+    border: none;
+    font-size: 1.13em;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    color: var(--button-text-bg-color);
+}
+
+.btn-primary button:hover{
+    background: var(--button-text-hover-bg-color);
+}
+
+.intro-img {
+    width: 28em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-section{
+    background-color: var(--page-bg-light);
+    padding:2em;
+    border-radius: 0.5em;
+}
+
+.menu-section h2{
+    font-size: 2.25em;
+    margin-bottom: 1.88em;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.56em;
+}
+
+.card{
+    background: white;
+    border: 1px solid var(--card-border-bg-color);
+    border-radius: 10px;
+    padding-bottom: 1.25em;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -3px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3{
+    color: var(--card-title);
+    font-size: 1.38em;
+    margin: 0.94em 0.94em 0.31em;
+}
+
+.card p{
+    color: var(--card-text);
+    margin: 0 0.94em 0.63em;
+}
+
+footer {
+    width: 85%;
+    color: var(--text-color);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.footer-col h3 {
+    font-size: 1.3em;
+    margin-bottom: 1.2em;
+}
+
+.footer-col a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.9em;
+    color: var(--footer-text);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.2s;
+}
+
+.footer-col a:hover {
+    color: var(--hover-nav);
+}
+
+.social-links a img {
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: 0.8em;
+    transition: transform 0.2s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.15);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2.5em;
+    padding-top: 1.2em;
+    border-top: 1px solid var(--card-title);
+    color: var(--footer-text);
+    font-size: 0.9em;
+}
+
+
+/* ---------- MEDIA 1200px (laptopuri mici) ---------- */
+@media (max-width: 1200px) {
+
+    header, section, footer {
+        width: 90%;
+    }
+
+    .intro {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .intro-text h1 {
+        font-size: 3.5em;
+    }
+
+    .intro-img {
+        width: 23em;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+}
+
+/* ---------- MEDIA 992px (tablete landscape) ---------- */
+@media (max-width: 992px) {
+
+    body {
+        gap: 3em;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-img {
+        width: 20em;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-container {
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .footer-col {
+        width: 40%;
+        text-align: center;
+    }
+
+}
+
+/* ---------- MEDIA 768px (tablete portrait) ---------- */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    nav a {
+        font-size: 1.1em;
+    }
+
+    .intro-text h1 {
+        font-size: 2.8em;
+    }
+
+    .intro-img {
+        width: 18em;
+    }
+
+    .menu-section {
+        padding: 1.5em;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* ---------- MEDIA 576px (telefoane medii) ---------- */
+@media (max-width: 576px) {
+
+    .intro-text h1 {
+        font-size: 2.2em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .intro-img {
+        width: 16em;
+    }
+
+    .menu-section h2 {
+        font-size: 1.8em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8em;
+    }
+
+    .footer-col h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* ---------- MEDIA 400px (telefoane mici) ---------- */
+@media (max-width: 400px) {
+
+    .intro-text h1 {
+        font-size: 1.9em;
+    }
+
+    .intro-img {
+        width: 14em;
+    }
+
+    .btn-primary button {
+        padding: 0.7em 1.2em;
+        font-size: 0.95em;
+    }
+
+    .card h3 {
+        font-size: 1.1em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .footer-bottom {
+        font-size: 0.8em;
+    }
+}
