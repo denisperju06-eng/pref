@@ -212,7 +212,6 @@ footer {
 }
 
 
-/* ---------- MEDIA 1200px (laptopuri mici) ---------- */
 @media (max-width: 1200px) {
 
     header, section, footer {
@@ -238,7 +237,6 @@ footer {
     }
 }
 
-/* ---------- MEDIA 992px (tablete landscape) ---------- */
 @media (max-width: 992px) {
 
     body {
@@ -274,7 +272,6 @@ footer {
 
 }
 
-/* ---------- MEDIA 768px (tablete portrait) ---------- */
 @media (max-width: 768px) {
 
     nav {
@@ -313,7 +310,6 @@ footer {
     }
 }
 
-/* ---------- MEDIA 576px (telefoane medii) ---------- */
 @media (max-width: 576px) {
 
     .intro-text h1 {
@@ -343,7 +339,6 @@ footer {
     }
 }
 
-/* ---------- MEDIA 400px (telefoane mici) ---------- */
 @media (max-width: 400px) {
 
     .intro-text h1 {
