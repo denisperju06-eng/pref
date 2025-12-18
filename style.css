@@ -159,6 +159,17 @@ nav a:hover{
     margin: 0 0.94em 0.63em;
 }
 
+.card:hover{
+    transform: translateY(-0.5em) scale(1.05);
+    transition: 0.2s;
+    h3{
+        color: var(--footer-text);
+    }
+    p{
+        color: var(--footer-text);
+    }
+}
+
 footer {
     width: 85%;
     color: var(--text-color);
