@@ -288,7 +288,7 @@ footer {
     .intro-img {
         width: 85%;
         max-width: 18em;
-        margin: 0 auto;
+        margin: 0;
         display: flex;
         justify-content: center;
     }
@@ -318,7 +318,7 @@ footer {
     .intro-img {
         width: 85%;
         max-width: 18em;
-        margin: 0 auto;
+        margin: 0;
         display: flex;
         justify-content: center;
     }
@@ -372,7 +372,7 @@ footer {
 
     .intro-img img {
         width: 28em;
-        margin: 0 auto;
+        margin: 0 ;
     }
 
     .menu-section {
@@ -412,7 +412,7 @@ footer {
     .intro-img {
         width: 85%;
         max-width: 16em;
-        margin: 0 auto;
+        margin: 0;
         display: flex;
         justify-content: center;
     }
@@ -450,7 +450,7 @@ footer {
     .intro-img {
         width: 85%;
         max-width: 14em;
-        margin: 0 auto;
+        margin: 0;
         display: flex;
         justify-content: center;
     }
