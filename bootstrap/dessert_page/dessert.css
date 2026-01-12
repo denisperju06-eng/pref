@@ -106,7 +106,7 @@ nav{
     transition: 0.3s;
 }
 
-.btn-custom:hover, .btn-custom:active {
+.btn-custom:hover{
     background-color: var(--button-text-hover-bg-color);
     color: var(--button-text-bg-color);
 }
@@ -305,7 +305,7 @@ footer {
         font-size: 3.5em;
     }
 
-    .intro-img {
+    .intro-img img{
         width: 23em;
     }
 

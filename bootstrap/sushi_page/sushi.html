@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preferences-sushi</title>
+    <title>Preferences Sushi Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="sushi.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="../index.html" class="logo">PREFERENCES</a>
-        <div class="buttonsSide">
-            <a href="../index.html">Home</a>
-            <a href="#menu-section">Menu</a>
-            <a href="#footer">Contact</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent p-0">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand logo m-0" href="../index.html">PREFERENCES</a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav gap-4 buttonsSide">
+                    <a class="nav-link p-0" href="../index.html">Home</a>
+                    <a class="nav-link p-0 active" href="#menu-section-sushi">Menu</a>
+                    <a class="nav-link p-0" href="#footer">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
@@ -25,281 +35,327 @@
             <h1>
                 Traditional<br>Japanese<br>taste,<br>perfected
             </h1>
-            <a class="btn-primary" href="#menu-section">
+            <a class="btn-primary" href="#menu-section-sushi">
                 <button>ORDER NOW</button>
             </a>
         </div>
 
         <div class="intro-img">
-            <img src="../foto/sushi/intro.png" alt="Sushi plate">
+            <img src="../../foto/sushi/intro.png" alt="Sushi plate">
         </div>
     </section>
-    <section class="menu-section" id="menu-section">
-        <h2>Sushi Menu</h2>
+    <section class="menu-section container my-5" id="menu-section-sushi">
 
-        <div class="menu-grid">
-
-            <div class="card">
-                <input type="checkbox" id="popup-1" class="popup-toggle">
-                <label for="popup-1" class="card-link">
-                    <img src="../foto/sushi/Salmon-Nigir.png" alt="Nigiri Salmon">
-                    <h3>Nigiri Salmon</h3>
-                    <p>Fresh salmon slice served over pressed rice.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-1" class="close">&times;</label>
-                        <h2>Nigiri Salmon</h2>
-                        <img src="../foto/sushi/Salmon-Nigir.png" alt="Nigiri Salmon">
-                        <p><b>Ingrediente:</b> orez sushi, somon crud, wasabi.</p>
-                        <p><b>Gramaj:</b> 45g</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="popup-2" class="popup-toggle">
-                <label for="popup-2" class="card-link">
-                    <img src="../foto/sushi/tuna-nigiri.png" alt="Tuna Nigiri">
-                    <h3>Tuna Nigiri</h3>
-                    <p>Lean tuna placed on hand-formed sushi rice.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-2" class="close">&times;</label>
-                        <h2>Tuna Nigiri</h2>
-                        <img src="../foto/sushi/tuna-nigiri.png" alt="Tuna Nigiri">
-                        <p><b>Ingrediente:</b> ton roșu, orez sushi, wasabi.</p>
-                        <p><b>Gramaj:</b> 40g</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="popup-3" class="popup-toggle">
-                <label for="popup-3" class="card-link">
-                    <img src="../foto/sushi/shrimp-nigiri.png" alt="Shrimp Nigiri">
-                    <h3>Shrimp Nigiri</h3>
-                    <p>Tender cooked shrimp placed on pressed rice.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-3" class="close">&times;</label>
-                        <h2>Shrimp Nigiri</h2>
-                        <img src="../foto/sushi/shrimp-nigiri.png" alt="Shrimp Nigiri">
-                        <p><b>Ingrediente:</b> crevete fiert, orez sushi, wasabi.</p>
-                        <p><b>Gramaj:</b> 38g</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="popup-4" class="popup-toggle">
-                <label for="popup-4" class="card-link">
-                    <img src="../foto/sushi/California-Roll.png" alt="California Roll">
-                    <h3>California Roll</h3>
-                    <p>Crab, avocado, and cucumber with rice and seaweed.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-4" class="close">&times;</label>
-                        <h2>California Roll</h2>
-                        <img src="../foto/sushi/California-Roll.png" alt="California Roll">
-                        <p><b>Ingrediente:</b> crab stick, avocado, castravete, orez, nori, susan.</p>
-                        <p><b>Gramaj:</b> 150g</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="popup-5" class="popup-toggle">
-                <label for="popup-5" class="card-link">
-                    <img src="../foto/sushi/Spicy-Tuna-Roll.png" alt="Spicy Tuna Roll">
-                    <h3>Spicy Tuna Roll</h3>
-                    <p>Tuna mixed with spicy mayo wrapped in rice and nori.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-5" class="close">&times;</label>
-                        <h2>Spicy Tuna Roll</h2>
-                        <img src="../foto/sushi/Spicy-Tuna-Roll.png" alt="Spicy Tuna Roll">
-                        <p><b>Ingrediente:</b> ton mărunțit, maioneză picantă, orez, nori, ceapă verde.</p>
-                        <p><b>Gramaj:</b> 155g</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="popup-6" class="popup-toggle">
-                <label for="popup-6" class="card-link">
-                    <img src="../foto/sushi/Dragon-Roll.png" alt="Dragon Roll">
-                    <h3>Dragon Roll</h3>
-                    <p>Eel and cucumber inside, topped with avocado slices.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-6" class="close">&times;</label>
-                        <h2>Dragon Roll</h2>
-                        <img src="../foto/sushi/Dragon-Roll.png" alt="Dragon Roll">
-                        <p><b>Ingrediente:</b> anghilă, castravete, avocado, orez, nori, sos unagi.</p>
-                        <p><b>Gramaj:</b> 180g</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="popup-7" class="popup-toggle">
-                <label for="popup-7" class="card-link">
-                    <img src="../foto/sushi/Philadelphia-Roll.png" alt="Philadelphia Roll">
-                    <h3>Philadelphia Roll</h3>
-                    <p>Salmon, cream cheese, and cucumber rolled together.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-7" class="close">&times;</label>
-                        <h2>Philadelphia Roll</h2>
-                        <img src="../foto/sushi/Philadelphia-Roll.png" alt="Philadelphia Roll">
-                        <p><b>Ingrediente:</b> somon, cremă de brânză, castravete, orez, nori.</p>
-                        <p><b>Gramaj:</b> 165g</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="popup-8" class="popup-toggle">
-                <label for="popup-8" class="card-link">
-                    <img src="../foto/sushi/Tempura-Shrimp-Roll.png" alt="Tempura Shrimp Roll">
-                    <h3>Tempura Shrimp Roll</h3>
-                    <p>Crispy fried shrimp rolled with rice and nori.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-8" class="close">&times;</label>
-                        <h2>Tempura Shrimp Roll</h2>
-                        <img src="../foto/sushi/Tempura-Shrimp-Roll.png" alt="Tempura Shrimp Roll">
-                        <p><b>Ingrediente:</b> crevete tempura, orez, nori, sos tempura.</p>
-                        <p><b>Gramaj:</b> 170g</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="popup-9" class="popup-toggle">
-                <label for="popup-9" class="card-link">
-                    <img src="../foto/sushi/Vegetable-Maki.png" alt="Vegetable Maki">
-                    <h3>Vegetable Maki</h3>
-                    <p>Roll with cucumber, carrot, and avocado.</p>
-                </label>
-
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-9" class="close">&times;</label>
-                        <h2>Vegetable Maki</h2>
-                        <img src="../foto/sushi/Vegetable-Maki.png" alt="Vegetable Maki">
-                        <p><b>Ingrediente:</b> avocado, castravete, morcov, orez, nori.</p>
-                        <p><b>Gramaj:</b> 140g</p>
-                    </div>
-                </div>
-            </div>
-
+        <div class="intro-menu">
+            <h2>Sushi Menu</h2>
         </div>
+
+        <div class="row menu-grid g-4">
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-1" class="popup-toggle">
+                    <label for="popup-1" class="card-link">
+                        <img src="../../foto/sushi/Salmon-Nigir.png" class="card-img-top" alt="Nigiri Salmon">
+                        <div class="card-body">
+                            <h3 class="card-title">Nigiri Salmon</h3>
+                            <p class="card-text">Fresh salmon slice served over pressed rice.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-1" class="close">&times;</label>
+                            <h2>Nigiri Salmon</h2>
+                            <img src="../../foto/sushi/Salmon-Nigir.png" alt="Nigiri Salmon">
+                            <p><b>Ingrediente:</b> orez sushi, somon crud, wasabi.</p>
+                            <p><b>Gramaj:</b> 45g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-2" class="popup-toggle">
+                    <label for="popup-2" class="card-link">
+                        <img src="../../foto/sushi/tuna-nigiri.png" class="card-img-top" alt="Tuna Nigiri">
+                        <div class="card-body">
+                            <h3 class="card-title">Tuna Nigiri</h3>
+                            <p class="card-text">Lean tuna placed on hand-formed sushi rice.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-2" class="close">&times;</label>
+                            <h2>Tuna Nigiri</h2>
+                            <img src="../../foto/sushi/tuna-nigiri.png" alt="Tuna Nigiri">
+                            <p><b>Ingrediente:</b> ton roșu, orez sushi, wasabi.</p>
+                            <p><b>Gramaj:</b> 40g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-3" class="popup-toggle">
+                    <label for="popup-3" class="card-link">
+                        <img src="../../foto/sushi/shrimp-nigiri.png" class="card-img-top" alt="Shrimp Nigiri">
+                        <div class="card-body">
+                            <h3 class="card-title">Shrimp Nigiri</h3>
+                            <p class="card-text">Tender cooked shrimp placed on pressed rice.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-3" class="close">&times;</label>
+                            <h2>Shrimp Nigiri</h2>
+                            <img src="../../foto/sushi/shrimp-nigiri.png" alt="Shrimp Nigiri">
+                            <p><b>Ingrediente:</b> crevete fiert, orez sushi, wasabi.</p>
+                            <p><b>Gramaj:</b> 38g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row menu-grid g-4 mt-4">
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-4" class="popup-toggle">
+                    <label for="popup-4" class="card-link">
+                        <img src="../../foto/sushi/California-Roll.png" class="card-img-top" alt="California Roll">
+                        <div class="card-body">
+                            <h3 class="card-title">California Roll</h3>
+                            <p class="card-text">Crab, avocado, and cucumber with rice and seaweed.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-4" class="close">&times;</label>
+                            <h2>California Roll</h2>
+                            <img src="../../foto/sushi/California-Roll.png" alt="California Roll">
+                            <p><b>Ingrediente:</b> crab stick, avocado, castravete, orez, nori, susan.</p>
+                            <p><b>Gramaj:</b> 150g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-5" class="popup-toggle">
+                    <label for="popup-5" class="card-link">
+                        <img src="../../foto/sushi/Spicy-Tuna-Roll.png" class="card-img-top" alt="Spicy Tuna Roll">
+                        <div class="card-body">
+                            <h3 class="card-title">Spicy Tuna Roll</h3>
+                            <p class="card-text">Tuna mixed with spicy mayo wrapped in rice and nori.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-5" class="close">&times;</label>
+                            <h2>Spicy Tuna Roll</h2>
+                            <img src="../../foto/sushi/Spicy-Tuna-Roll.png" alt="Spicy Tuna Roll">
+                            <p><b>Ingrediente:</b> ton mărunțit, maioneză picantă, orez, nori, ceapă verde.</p>
+                            <p><b>Gramaj:</b> 155g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-6" class="popup-toggle">
+                    <label for="popup-6" class="card-link">
+                        <img src="../../foto/sushi/Dragon-Roll.png" class="card-img-top" alt="Dragon Roll">
+                        <div class="card-body">
+                            <h3 class="card-title">Dragon Roll</h3>
+                            <p class="card-text">Eel and cucumber inside, topped with avocado slices.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-6" class="close">&times;</label>
+                            <h2>Dragon Roll</h2>
+                            <img src="../../foto/sushi/Dragon-Roll.png" alt="Dragon Roll">
+                            <p><b>Ingrediente:</b> anghilă, castravete, avocado, orez, nori, sos unagi.</p>
+                            <p><b>Gramaj:</b> 180g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row menu-grid g-4 mt-4">
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-7" class="popup-toggle">
+                    <label for="popup-7" class="card-link">
+                        <img src="../../foto/sushi/Philadelphia-Roll.png" class="card-img-top" alt="Philadelphia Roll">
+                        <div class="card-body">
+                            <h3 class="card-title">Philadelphia Roll</h3>
+                            <p class="card-text">Salmon, cream cheese, and cucumber rolled together.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-7" class="close">&times;</label>
+                            <h2>Philadelphia Roll</h2>
+                            <img src="../../foto/sushi/Philadelphia-Roll.png" alt="Philadelphia Roll">
+                            <p><b>Ingrediente:</b> somon, cremă de brânză, castravete, orez, nori.</p>
+                            <p><b>Gramaj:</b> 165g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-8" class="popup-toggle">
+                    <label for="popup-8" class="card-link">
+                        <img src="../../foto/sushi/Tempura-Shrimp-Roll.png" class="card-img-top" alt="Tempura Shrimp Roll">
+                        <div class="card-body">
+                            <h3 class="card-title">Tempura Shrimp Roll</h3>
+                            <p class="card-text">Crispy fried shrimp rolled with rice and nori.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-8" class="close">&times;</label>
+                            <h2>Tempura Shrimp Roll</h2>
+                            <img src="../../foto/sushi/Tempura-Shrimp-Roll.png" alt="Tempura Shrimp Roll">
+                            <p><b>Ingrediente:</b> crevete tempura, orez, nori, sos tempura.</p>
+                            <p><b>Gramaj:</b> 170g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-9" class="popup-toggle">
+                    <label for="popup-9" class="card-link">
+                        <img src="../../foto/sushi/Vegetable-Maki.png" class="card-img-top" alt="Vegetable Maki">
+                        <div class="card-body">
+                            <h3 class="card-title">Vegetable Maki</h3>
+                            <p class="card-text">Roll with cucumber, carrot, and avocado.</p>
+                        </div>
+                    </label>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-9" class="close">&times;</label>
+                            <h2>Vegetable Maki</h2>
+                            <img src="../../foto/sushi/Vegetable-Maki.png" alt="Vegetable Maki">
+                            <p><b>Ingrediente:</b> avocado, castravete, morcov, orez, nori.</p>
+                            <p><b>Gramaj:</b> 140g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 </main>
 
 <footer id="footer">
-    <div class="footer-container">
+    <div class="container-fluid p-0">
+        <div class="row">
 
-        <div class="footer-col">
-            <h3>Company</h3>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Company</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Careers
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-            <ul class="footer-list">
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact us</a>
-                </li>
-                <li>
-                    <a href="#">Support</a>
-                </li>
-                <li>
-                    <a href="#">Careers</a>
-                </li>
-            </ul>
-        </div>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#menu-section-sushi">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+                            Footer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">
+                            First page
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="footer-col">
-            <h3>Quick Links</h3>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Bootstrap</h3>
+                <ul class="list-unstyled">
+                    <li><a href="https://getbootstrap.com" target="_blank">Documentation</a></li>
+                    <li><a href="../../bootstrap/index.html">Bootstrap page</a></li>
+                </ul>
+            </div>
 
-            <ul class="footer-list">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#menu-section">Menu</a>
-                </li>
-                <li>
-                    <a href="#footer">Footer</a>
-                </li>
-                <li>
-                    <a href="../../index.html">First page</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Bootstrap</h3>
-
-            <ul class="footer-list">
-                <li>
-                    <a href="https://getbootstrap.com" target="_blank">Documentation</a>
-                </li>
-                <li>
-                    <a href="../../bootstrap/index.html">Bootstrap page</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Follow Us</h3>
-
-            <ul class="social-links">
-                <li>
-                    <a href="#facebook" id="facebook">
-                        <img src="../../foto/icons/facebook.svg" alt="Facebook">
-                        <span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#instagram" id="instagram">
-                        <img src="../../foto/icons/instagram.svg" alt="Instagram">
-                        <span>Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#tiktok" id="tiktok">
-                        <img src="../../foto/icons/tiktok.svg" alt="TikTok">
-                        <span>TikTok</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Follow Us</h3>
+                <ul class="social-links list-unstyled">
+                    <li>
+                        <a href="#facebook" id="facebook">
+                            <img src="../../foto/icons/facebook.svg" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#instagram" id="instagram">
+                            <img src="../../foto/icons/instagram.svg" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tiktok" id="tiktok">
+                            <img src="../../foto/icons/tiktok.svg" alt="TikTok">
+                            <span>TikTok</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="footer-bottom">
         <p>&copy; 2026 Preferences Restaurant. All rights reserved.</p>
     </div>
-
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

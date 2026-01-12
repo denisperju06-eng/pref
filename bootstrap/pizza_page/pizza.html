@@ -3,98 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preferences-pizza</title>
+    <title>Preferences Pizza Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="pizza.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="../index.html" class="logo">PREFERENCES</a>
-        <div class="buttonsSide">
-            <a href="../index.html">Home</a>
-            <a href="#menu-section">Menu</a>
-            <a href="#footer">Contact</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent p-0">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand logo m-0" href="../index.html">PREFERENCES</a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav gap-4 buttonsSide">
+                    <a class="nav-link p-0" href="../index.html">Home</a>
+                    <a class="nav-link p-0 active" href="#menu-section-pizza">Menu</a>
+                    <a class="nav-link p-0" href="#footer">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
-
 <main>
     <section class="intro">
         <div class="intro-text">
             <h1>
                 Hot<br>pizzas,<br>crafted<br>to perfection
             </h1>
-            <a class="btn-primary" href="#menu-section">
+            <a class="btn-primary" href="#menu-section-pizza">
                 <button>ORDER NOW</button>
             </a>
         </div>
 
         <div class="intro-img">
-            <img src="../foto/pizza/intro.png" alt="Pizza">
+            <img src="../../foto/pizza/intro.png" alt="Pizza">
         </div>
     </section>
 
-    <section class="menu-section" id="menu-section">
+    <section class="menu-section container my-5" id="menu-section-pizza">
 
         <div class="intro-menu">
             <h2>Classic Pizzas</h2>
         </div>
 
-        <div class="menu-grid">
-            <div class="card">
-                <input type="checkbox" id="popup-1" class="popup-toggle">
-                <label for="popup-1" class="card-link">
-                    <img src="../foto/pizza/Margherita_Pizza.png" alt="Margherita Pizza">
-                    <h3>Margherita Pizza</h3>
-                    <p>Classic tomato sauce, mozzarella, and fresh basil.</p>
-                </label>
+        <div class="row menu-grid g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-1" class="popup-toggle">
+                    <label for="popup-1" class="card-link">
+                        <img src="../../foto/pizza/Margherita_Pizza.png" class="card-img-top" alt="Margherita Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Margherita Pizza</h3>
+                            <p class="card-text">Classic tomato sauce, mozzarella, and fresh basil.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-1" class="close">&times;</label>
-                        <h2>Margherita Pizza</h2>
-                        <img src="../foto/pizza/Margherita_Pizza.png" alt="Margherita Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, busuioc proaspăt, ulei de măsline.</p>
-                        <p><b>Gramaj:</b> 450g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-1" class="close">&times;</label>
+                            <h2>Margherita Pizza</h2>
+                            <img src="../../foto/pizza/Margherita_Pizza.png" alt="Margherita Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, busuioc proaspăt, ulei de măsline.</p>
+                            <p><b>Gramaj:</b> 450g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <input type="checkbox" id="popup-2" class="popup-toggle">
-                <label for="popup-2" class="card-link">
-                    <img src="../foto/pizza/Pepperoni_Pizza.png" alt="Pepperoni Pizza">
-                    <h3>Pepperoni Pizza</h3>
-                    <p>Spicy pepperoni, mozzarella, and rich tomato sauce.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-2" class="popup-toggle">
+                    <label for="popup-2" class="card-link">
+                        <img src="../../foto/pizza/Pepperoni_Pizza.png" class="card-img-top" alt="Pepperoni Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Pepperoni Pizza</h3>
+                            <p class="card-text">Spicy pepperoni, mozzarella, and rich tomato sauce.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-2" class="close">&times;</label>
-                        <h2>Pepperoni Pizza</h2>
-                        <img src="../foto/pizza/Pepperoni_Pizza.png" alt="Pepperoni Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, pepperoni, oregano.</p>
-                        <p><b>Gramaj:</b> 520g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-2" class="close">&times;</label>
+                            <h2>Pepperoni Pizza</h2>
+                            <img src="../../foto/pizza/Pepperoni_Pizza.png" alt="Pepperoni Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, pepperoni, oregano.</p>
+                            <p><b>Gramaj:</b> 520g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <input type="checkbox" id="popup-3" class="popup-toggle">
-                <label for="popup-3" class="card-link">
-                    <img src="../foto/pizza/Quattro_Formaggi_Pizza.png" alt="Quattro Formaggi Pizza">
-                    <h3>Quattro Formaggi Pizza</h3>
-                    <p>A creamy blend of four cheeses, melted to perfection.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-3" class="popup-toggle">
+                    <label for="popup-3" class="card-link">
+                        <img src="../../foto/pizza/Quattro_Formaggi_Pizza.png" class="card-img-top" alt="Quattro Formaggi Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Quattro Formaggi Pizza</h3>
+                            <p class="card-text">A creamy blend of four cheeses, melted to perfection.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-3" class="close">&times;</label>
-                        <h2>Quattro Formaggi Pizza</h2>
-                        <img src="../foto/pizza/Quattro_Formaggi_Pizza.png" alt="Quattro Formaggi Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, mozzarella, gorgonzola, parmesan, brie (sau fontina), smântână/cremă albă.</p>
-                        <p><b>Gramaj:</b> 500g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-3" class="close">&times;</label>
+                            <h2>Quattro Formaggi Pizza</h2>
+                            <img src="../../foto/pizza/Quattro_Formaggi_Pizza.png" alt="Quattro Formaggi Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, mozzarella, gorgonzola, parmesan, brie (sau fontina), smântână/cremă albă.</p>
+                            <p><b>Gramaj:</b> 500g</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,60 +125,72 @@
             <h2>Meat Pizzas</h2>
         </div>
 
-        <div class="menu-grid">
-            <div class="card">
-                <input type="checkbox" id="popup-4" class="popup-toggle">
-                <label for="popup-4" class="card-link">
-                    <img src="../foto/pizza/BBQ_Chicken_Pizza.png" alt="BBQ Chicken Pizza">
-                    <h3>BBQ Chicken Pizza</h3>
-                    <p>Smoky BBQ sauce, chicken, and melty mozzarella.</p>
-                </label>
+        <div class="row menu-grid g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-4" class="popup-toggle">
+                    <label for="popup-4" class="card-link">
+                        <img src="../../foto/pizza/BBQ_Chicken_Pizza.png" class="card-img-top" alt="BBQ Chicken Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">BBQ Chicken Pizza</h3>
+                            <p class="card-text">Smoky BBQ sauce, chicken, and melty mozzarella.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-4" class="close">&times;</label>
-                        <h2>BBQ Chicken Pizza</h2>
-                        <img src="../foto/pizza/BBQ_Chicken_Pizza.png" alt="BBQ Chicken Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, sos BBQ, mozzarella, piept de pui, ceapă roșie, porumb (opțional).</p>
-                        <p><b>Gramaj:</b> 540g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-4" class="close">&times;</label>
+                            <h2>BBQ Chicken Pizza</h2>
+                            <img src="../../foto/pizza/BBQ_Chicken_Pizza.png" alt="BBQ Chicken Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, sos BBQ, mozzarella, piept de pui, ceapă roșie, porumb (opțional).</p>
+                            <p><b>Gramaj:</b> 540g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <input type="checkbox" id="popup-5" class="popup-toggle">
-                <label for="popup-5" class="card-link">
-                    <img src="../foto/pizza/Ham_&_Mushroom_Pizza.png" alt="Ham & Mushroom Pizza">
-                    <h3>Ham &amp; Mushroom Pizza</h3>
-                    <p>Ham, mushrooms, mozzarella, and classic tomato sauce.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-5" class="popup-toggle">
+                    <label for="popup-5" class="card-link">
+                        <img src="../../foto/pizza/Ham_&_Mushroom_Pizza.png" class="card-img-top" alt="Ham & Mushroom Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Ham &amp; Mushroom Pizza</h3>
+                            <p class="card-text">Ham, mushrooms, mozzarella, and classic tomato sauce.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-5" class="close">&times;</label>
-                        <h2>Ham &amp; Mushroom Pizza</h2>
-                        <img src="../foto/pizza/Ham_&_Mushroom_Pizza.png" alt="Ham & Mushroom Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, șuncă, ciuperci, oregano.</p>
-                        <p><b>Gramaj:</b> 530g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-5" class="close">&times;</label>
+                            <h2>Ham &amp; Mushroom Pizza</h2>
+                            <img src="../../foto/pizza/Ham_&_Mushroom_Pizza.png" alt="Ham & Mushroom Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, șuncă, ciuperci, oregano.</p>
+                            <p><b>Gramaj:</b> 530g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <input type="checkbox" id="popup-6" class="popup-toggle">
-                <label for="popup-6" class="card-link">
-                    <img src="../foto/pizza/Spicy_Sausage_Pizza.png" alt="Spicy Sausage Pizza">
-                    <h3>Spicy Sausage Pizza</h3>
-                    <p>Spicy sausage, mozzarella, and a bold tomato base.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-6" class="popup-toggle">
+                    <label for="popup-6" class="card-link">
+                        <img src="../../foto/pizza/Spicy_Sausage_Pizza.png" class="card-img-top" alt="Spicy Sausage Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Spicy Sausage Pizza</h3>
+                            <p class="card-text">Spicy sausage, mozzarella, and a bold tomato base.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-6" class="close">&times;</label>
-                        <h2>Spicy Sausage Pizza</h2>
-                        <img src="../foto/pizza/Spicy_Sausage_Pizza.png" alt="Spicy Sausage Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, cârnați picanți, ardei iute (opțional), ceapă.</p>
-                        <p><b>Gramaj:</b> 560g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-6" class="close">&times;</label>
+                            <h2>Spicy Sausage Pizza</h2>
+                            <img src="../../foto/pizza/Spicy_Sausage_Pizza.png" alt="Spicy Sausage Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, cârnați picanți, ardei iute (opțional), ceapă.</p>
+                            <p><b>Gramaj:</b> 560g</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,60 +200,72 @@
             <h2>Veggie Pizzas</h2>
         </div>
 
-        <div class="menu-grid">
-            <div class="card">
-                <input type="checkbox" id="popup-7" class="popup-toggle">
-                <label for="popup-7" class="card-link">
-                    <img src="../foto/pizza/Veggie_Supreme_Pizza.png" alt="Veggie Supreme Pizza">
-                    <h3>Veggie Supreme Pizza</h3>
-                    <p>Loaded with fresh veggies and mozzarella.</p>
-                </label>
+        <div class="row menu-grid g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-7" class="popup-toggle">
+                    <label for="popup-7" class="card-link">
+                        <img src="../../foto/pizza/Veggie_Supreme_Pizza.png" class="card-img-top" alt="Veggie Supreme Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Veggie Supreme Pizza</h3>
+                            <p class="card-text">Loaded with fresh veggies and mozzarella.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-7" class="close">&times;</label>
-                        <h2>Veggie Supreme Pizza</h2>
-                        <img src="../foto/pizza/Veggie_Supreme_Pizza.png" alt="Veggie Supreme Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, ardei, măsline, ciuperci, ceapă, porumb.</p>
-                        <p><b>Gramaj:</b> 520g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-7" class="close">&times;</label>
+                            <h2>Veggie Supreme Pizza</h2>
+                            <img src="../../foto/pizza/Veggie_Supreme_Pizza.png" alt="Veggie Supreme Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, ardei, măsline, ciuperci, ceapă, porumb.</p>
+                            <p><b>Gramaj:</b> 520g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <input type="checkbox" id="popup-8" class="popup-toggle">
-                <label for="popup-8" class="card-link">
-                    <img src="../foto/pizza/Spinach_&_Feta_Pizza.png" alt="Spinach & Feta Pizza">
-                    <h3>Spinach &amp; Feta Pizza</h3>
-                    <p>Spinach, feta, and a creamy, savory finish.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-8" class="popup-toggle">
+                    <label for="popup-8" class="card-link">
+                        <img src="../../foto/pizza/Spinach_&_Feta_Pizza.png" class="card-img-top" alt="Spinach & Feta Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Spinach &amp; Feta Pizza</h3>
+                            <p class="card-text">Spinach, feta, and a creamy, savory finish.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-8" class="close">&times;</label>
-                        <h2>Spinach &amp; Feta Pizza</h2>
-                        <img src="../foto/pizza/Spinach_&_Feta_Pizza.png" alt="Spinach & Feta Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, sos alb/cremă, mozzarella, spanac, feta, usturoi, oregano.</p>
-                        <p><b>Gramaj:</b> 500g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-8" class="close">&times;</label>
+                            <h2>Spinach &amp; Feta Pizza</h2>
+                            <img src="../../foto/pizza/Spinach_&_Feta_Pizza.png" alt="Spinach & Feta Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, sos alb/cremă, mozzarella, spanac, feta, usturoi, oregano.</p>
+                            <p><b>Gramaj:</b> 500g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <input type="checkbox" id="popup-9" class="popup-toggle">
-                <label for="popup-9" class="card-link">
-                    <img src="../foto/pizza/Roasted_Vegetable_Pizza.png" alt="Roasted Vegetable Pizza">
-                    <h3>Roasted Vegetable Pizza</h3>
-                    <p>Roasted veggies, mozzarella, and a rich tomato base.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-9" class="popup-toggle">
+                    <label for="popup-9" class="card-link">
+                        <img src="../../foto/pizza/Roasted_Vegetable_Pizza.png" class="card-img-top" alt="Roasted Vegetable Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Roasted Vegetable Pizza</h3>
+                            <p class="card-text">Roasted veggies, mozzarella, and a rich tomato base.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-9" class="close">&times;</label>
-                        <h2>Roasted Vegetable Pizza</h2>
-                        <img src="../foto/pizza/Roasted_Vegetable_Pizza.png" alt="Roasted Vegetable Pizza">
-                        <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, dovlecel copt, vinete coapte, ardei copt, ceapă, ulei de măsline.</p>
-                        <p><b>Gramaj:</b> 510g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-9" class="close">&times;</label>
+                            <h2>Roasted Vegetable Pizza</h2>
+                            <img src="../../foto/pizza/Roasted_Vegetable_Pizza.png" alt="Roasted Vegetable Pizza">
+                            <p><b>Ingrediente:</b> aluat pizza, sos de roșii, mozzarella, dovlecel copt, vinete coapte, ardei copt, ceapă, ulei de măsline.</p>
+                            <p><b>Gramaj:</b> 510g</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,90 +276,100 @@
 
 
 <footer id="footer">
-    <div class="footer-container">
+    <div class="container-fluid p-0">
+        <div class="row">
 
-        <div class="footer-col">
-            <h3>Company</h3>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Company</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Careers
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-            <ul class="footer-list">
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact us</a>
-                </li>
-                <li>
-                    <a href="#">Support</a>
-                </li>
-                <li>
-                    <a href="#">Careers</a>
-                </li>
-            </ul>
-        </div>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#menu-section-pizza">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+                            Footer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">
+                            First page
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="footer-col">
-            <h3>Quick Links</h3>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Bootstrap</h3>
+                <ul class="list-unstyled">
+                    <li><a href="https://getbootstrap.com" target="_blank">Documentation</a></li>
+                    <li><a href="../../bootstrap/index.html">Bootstrap page</a></li>
+                </ul>
+            </div>
 
-            <ul class="footer-list">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#menu-section">Menu</a>
-                </li>
-                <li>
-                    <a href="#footer">Footer</a>
-                </li>
-                <li>
-                    <a href="../../index.html">First page</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Bootstrap</h3>
-
-            <ul class="footer-list">
-                <li>
-                    <a href="https://getbootstrap.com" target="_blank">Documentation</a>
-                </li>
-                <li>
-                    <a href="../../bootstrap/index.html">Bootstrap page</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Follow Us</h3>
-
-            <ul class="social-links">
-                <li>
-                    <a href="#facebook" id="facebook">
-                        <img src="../../foto/icons/facebook.svg" alt="Facebook">
-                        <span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#instagram" id="instagram">
-                        <img src="../../foto/icons/instagram.svg" alt="Instagram">
-                        <span>Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#tiktok" id="tiktok">
-                        <img src="../../foto/icons/tiktok.svg" alt="TikTok">
-                        <span>TikTok</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Follow Us</h3>
+                <ul class="social-links list-unstyled">
+                    <li>
+                        <a href="#facebook" id="facebook">
+                            <img src="../../foto/icons/facebook.svg" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#instagram" id="instagram">
+                            <img src="../../foto/icons/instagram.svg" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tiktok" id="tiktok">
+                            <img src="../../foto/icons/tiktok.svg" alt="TikTok">
+                            <span>TikTok</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="footer-bottom">
         <p>&copy; 2026 Preferences Restaurant. All rights reserved.</p>
     </div>
-
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

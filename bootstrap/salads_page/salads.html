@@ -3,159 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preferences-salads</title>
+    <title>Preferences Salads Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="salads.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="../index.html" class="logo">PREFERENCES</a>
-        <div class="buttonsSide">
-            <a href="../index.html">Home</a>
-            <a href="#menu-section">Menu</a>
-            <a href="#footer">Contact</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent p-0">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand logo m-0" href="../index.html">PREFERENCES</a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav gap-4 buttonsSide">
+                    <a class="nav-link p-0" href="../index.html">Home</a>
+                    <a class="nav-link p-0 active" href="#menu-section-salads">Menu</a>
+                    <a class="nav-link p-0" href="#footer">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
-
 <main>
     <section class="intro">
         <div class="intro-text">
             <h1>Crunchy<br>greens,<br>bold<br>flavor</h1>
-            <a class="btn-primary" href="#menu-section">
+            <a class="btn-primary" href="#menu-section-salads">
                 <button>VIEW MENU</button>
             </a>
         </div>
-        <img class="intro-img" src="../foto/salads/intro.png" alt="salads"/>
+        <img class="intro-img" src="../../foto/salads/intro.png" alt="salads"/>
     </section>
 
-    <section class="menu-section" id="menu-section">
-        <h2>Salads Menu</h2>
+    <section class="menu-section container my-5" id="menu-section-salads">
 
-        <div class="menu-grid">
-            <!-- Caesar -->
-            <div class="card">
-                <input type="checkbox" id="popup-1" class="popup-toggle">
-                <label for="popup-1" class="card-link">
-                    <img src="../foto/salads/Classic_Caesar_Salad.png" alt="Classic Caesar Salad">
-                    <h3>Classic Caesar Salad</h3>
-                    <p>A creamy and crunchy classic, perfect for any time of the day.</p>
-                </label>
+        <div class="intro-menu">
+            <h2>Salads Menu</h2>
+        </div>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-1" class="close">&times;</label>
-                        <h2>Salată Caesar Clasică</h2>
-                        <img src="../foto/salads/Classic_Caesar_Salad.png" alt="Classic Caesar Salad">
-                        <p><b>Ingrediente:</b> salată romaine, crutoane, parmezan, dressing Caesar (usturoi, lămâie, muștar, ou/maioneză, anșoa), pui la grătar (opțional).</p>
-                        <p><b>Gramaj:</b> 350g</p>
+        <div class="row menu-grid g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-1" class="popup-toggle">
+                    <label for="popup-1" class="card-link">
+                        <img src="../../foto/salads/Classic_Caesar_Salad.png" class="card-img-top" alt="Classic Caesar Salad">
+                        <div class="card-body">
+                            <h3 class="card-title">Classic Caesar Salad</h3>
+                            <p class="card-text">A creamy and crunchy classic, perfect for any time of the day.</p>
+                        </div>
+                    </label>
+
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-1" class="close">&times;</label>
+                            <h2>Salată Caesar Clasică</h2>
+                            <img src="../../foto/salads/Classic_Caesar_Salad.png" alt="Classic Caesar Salad">
+                            <p><b>Ingrediente:</b> salată romaine, crutoane, parmezan, dressing Caesar (usturoi, lămâie, muștar, ou/maioneză, anșoa), pui la grătar (opțional).</p>
+                            <p><b>Gramaj:</b> 350g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Greek -->
-            <div class="card">
-                <input type="checkbox" id="popup-2" class="popup-toggle">
-                <label for="popup-2" class="card-link">
-                    <img src="../foto/salads/Greek_Salad.png" alt="Greek Salad">
-                    <h3>Greek Salad</h3>
-                    <p>Fresh and light, full of authentic Mediterranean flavors.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-2" class="popup-toggle">
+                    <label for="popup-2" class="card-link">
+                        <img src="../../foto/salads/Greek_Salad.png" class="card-img-top" alt="Greek Salad">
+                        <div class="card-body">
+                            <h3 class="card-title">Greek Salad</h3>
+                            <p class="card-text">Fresh and light, full of authentic Mediterranean flavors.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-2" class="close">&times;</label>
-                        <h2>Salată Grecească</h2>
-                        <img src="../foto/salads/Greek_Salad.png" alt="Greek Salad">
-                        <p><b>Ingrediente:</b> roșii, castraveți, ardei gras, ceapă roșie, măsline Kalamata, brânză feta, oregano, ulei de măsline.</p>
-                        <p><b>Gramaj:</b> 400g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-2" class="close">&times;</label>
+                            <h2>Salată Grecească</h2>
+                            <img src="../../foto/salads/Greek_Salad.png" alt="Greek Salad">
+                            <p><b>Ingrediente:</b> roșii, castraveți, ardei gras, ceapă roșie, măsline Kalamata, brânză feta, oregano, ulei de măsline.</p>
+                            <p><b>Gramaj:</b> 400g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Chicken Avocado -->
-            <div class="card">
-                <input type="checkbox" id="popup-3" class="popup-toggle">
-                <label for="popup-3" class="card-link">
-                    <img src="../foto/salads/Chicken_Avocado_Salad.png" alt="Chicken Avocado Salad">
-                    <h3>Chicken Avocado Salad</h3>
-                    <p>Balanced and satisfying, with creamy and fresh textures.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-3" class="popup-toggle">
+                    <label for="popup-3" class="card-link">
+                        <img src="../../foto/salads/Chicken_Avocado_Salad.png" class="card-img-top" alt="Chicken Avocado Salad">
+                        <div class="card-body">
+                            <h3 class="card-title">Chicken Avocado Salad</h3>
+                            <p class="card-text">Balanced and satisfying, with creamy and fresh textures.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-3" class="close">&times;</label>
-                        <h2>Salată cu Pui și Avocado</h2>
-                        <img src="../foto/salads/Chicken_Avocado_Salad.png" alt="Chicken Avocado Salad">
-                        <p><b>Ingrediente:</b> mix de salată, piept de pui la grătar, avocado, roșii cherry, castravete, ceapă roșie, dressing lămâie-lime.</p>
-                        <p><b>Gramaj:</b> 420g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-3" class="close">&times;</label>
+                            <h2>Salată cu Pui și Avocado</h2>
+                            <img src="../../foto/salads/Chicken_Avocado_Salad.png" alt="Chicken Avocado Salad">
+                            <p><b>Ingrediente:</b> mix de salată, piept de pui la grătar, avocado, roșii cherry, castravete, ceapă roșie, dressing lămâie-lime.</p>
+                            <p><b>Gramaj:</b> 420g</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="menu-grid">
-            <!-- Spinach Feta -->
-            <div class="card">
-                <input type="checkbox" id="popup-4" class="popup-toggle">
-                <label for="popup-4" class="card-link">
-                    <img src="../foto/salads/Spinach_&_Feta_Salad.png" alt="Spinach & Feta Salad">
-                    <h3>Spinach &amp; Feta Salad</h3>
-                    <p>Light and aromatic, with a refreshing and delicate taste.</p>
-                </label>
+        <div class="row menu-grid g-4 mt-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-4" class="popup-toggle">
+                    <label for="popup-4" class="card-link">
+                        <img src="../../foto/salads/Spinach_&_Feta_Salad.png" class="card-img-top" alt="Spinach & Feta Salad">
+                        <div class="card-body">
+                            <h3 class="card-title">Spinach &amp; Feta Salad</h3>
+                            <p class="card-text">Light and aromatic, with a refreshing and delicate taste.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-4" class="close">&times;</label>
-                        <h2>Salată cu Spanac și Feta</h2>
-                        <img src="../foto/salads/Spinach_&_Feta_Salad.png" alt="Spinach & Feta Salad">
-                        <p><b>Ingrediente:</b> spanac baby, brânză feta, roșii cherry (opțional), ceapă roșie, dressing de lămâie sau balsamic.</p>
-                        <p><b>Gramaj:</b> 380g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-4" class="close">&times;</label>
+                            <h2>Salată cu Spanac și Feta</h2>
+                            <img src="../../foto/salads/Spinach_&_Feta_Salad.png" alt="Spinach & Feta Salad">
+                            <p><b>Ingrediente:</b> spanac baby, brânză feta, roșii cherry (opțional), ceapă roșie, dressing de lămâie sau balsamic.</p>
+                            <p><b>Gramaj:</b> 380g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Quinoa -->
-            <div class="card">
-                <input type="checkbox" id="popup-5" class="popup-toggle">
-                <label for="popup-5" class="card-link">
-                    <img src="../foto/salads/Quinoa_Veggie_Salad.png" alt="Quinoa Veggie Salad">
-                    <h3>Quinoa Veggie Salad</h3>
-                    <p>A healthy and energizing choice, ideal for lunch.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-5" class="popup-toggle">
+                    <label for="popup-5" class="card-link">
+                        <img src="../../foto/salads/Quinoa_Veggie_Salad.png" class="card-img-top" alt="Quinoa Veggie Salad">
+                        <div class="card-body">
+                            <h3 class="card-title">Quinoa Veggie Salad</h3>
+                            <p class="card-text">A healthy and energizing choice, ideal for lunch.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-5" class="close">&times;</label>
-                        <h2>Salată de Quinoa cu Legume</h2>
-                        <img src="../foto/salads/Quinoa_Veggie_Salad.png" alt="Quinoa Veggie Salad">
-                        <p><b>Ingrediente:</b> quinoa, roșii cherry, castravete, ardei gras, năut (opțional), pătrunjel, dressing de lămâie.</p>
-                        <p><b>Gramaj:</b> 450g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-5" class="close">&times;</label>
+                            <h2>Salată de Quinoa cu Legume</h2>
+                            <img src="../../foto/salads/Quinoa_Veggie_Salad.png" alt="Quinoa Veggie Salad">
+                            <p><b>Ingrediente:</b> quinoa, roșii cherry, castravete, ardei gras, năut (opțional), pătrunjel, dressing de lămâie.</p>
+                            <p><b>Gramaj:</b> 450g</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Beetroot -->
-            <div class="card">
-                <input type="checkbox" id="popup-6" class="popup-toggle">
-                <label for="popup-6" class="card-link">
-                    <img src="../foto/salads/Beetroot_&_Goat_Cheese_Salad.jpeg" alt="Beetroot & Goat Cheese Salad">
-                    <h3>Beetroot &amp; Goat Cheese Salad</h3>
-                    <p>Elegant and colorful, with a pleasant sweet-sour taste.</p>
-                </label>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100">
+                    <input type="checkbox" id="popup-6" class="popup-toggle">
+                    <label for="popup-6" class="card-link">
+                        <img src="../../foto/salads/Beetroot_&_Goat_Cheese_Salad.jpeg" class="card-img-top" alt="Beetroot & Goat Cheese Salad">
+                        <div class="card-body">
+                            <h3 class="card-title">Beetroot &amp; Goat Cheese Salad</h3>
+                            <p class="card-text">Elegant and colorful, with a pleasant sweet-sour taste.</p>
+                        </div>
+                    </label>
 
-                <div class="popup">
-                    <div class="popup-content">
-                        <label for="popup-6" class="close">&times;</label>
-                        <h2>Salată cu Sfeclă și Brânză de Capră</h2>
-                        <img src="../foto/salads/Beetroot_&_Goat_Cheese_Salad.jpeg" alt="Beetroot & Goat Cheese Salad">
-                        <p><b>Ingrediente:</b> sfeclă coaptă, brânză de capră, rucola, nuci (opțional), dressing balsamic.</p>
-                        <p><b>Gramaj:</b> 400g</p>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <label for="popup-6" class="close">&times;</label>
+                            <h2>Salată cu Sfeclă și Brânză de Capră</h2>
+                            <img src="../../foto/salads/Beetroot_&_Goat_Cheese_Salad.jpeg" alt="Beetroot & Goat Cheese Salad">
+                            <p><b>Ingrediente:</b> sfeclă coaptă, brânză de capră, rucola, nuci (opțional), dressing balsamic.</p>
+                            <p><b>Gramaj:</b> 400g</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
 
@@ -163,90 +194,100 @@
 
 
 <footer id="footer">
-    <div class="footer-container">
+    <div class="container-fluid p-0">
+        <div class="row">
 
-        <div class="footer-col">
-            <h3>Company</h3>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Company</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Careers
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-            <ul class="footer-list">
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact us</a>
-                </li>
-                <li>
-                    <a href="#">Support</a>
-                </li>
-                <li>
-                    <a href="#">Careers</a>
-                </li>
-            </ul>
-        </div>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#menu-section-salads">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+                            Footer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">
+                            First page
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="footer-col">
-            <h3>Quick Links</h3>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Bootstrap</h3>
+                <ul class="list-unstyled">
+                    <li><a href="https://getbootstrap.com" target="_blank">Documentation</a></li>
+                    <li><a href="../../bootstrap/index.html">Bootstrap page</a></li>
+                </ul>
+            </div>
 
-            <ul class="footer-list">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#menu-section">Menu</a>
-                </li>
-                <li>
-                    <a href="#footer">Footer</a>
-                </li>
-                <li>
-                    <a href="../../index.html">First page</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Bootstrap</h3>
-
-            <ul class="footer-list">
-                <li>
-                    <a href="https://getbootstrap.com" target="_blank">Documentation</a>
-                </li>
-                <li>
-                    <a href="../../bootstrap/index.html">Bootstrap page</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Follow Us</h3>
-
-            <ul class="social-links">
-                <li>
-                    <a href="#facebook" id="facebook">
-                        <img src="../../foto/icons/facebook.svg" alt="Facebook">
-                        <span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#instagram" id="instagram">
-                        <img src="../../foto/icons/instagram.svg" alt="Instagram">
-                        <span>Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#tiktok" id="tiktok">
-                        <img src="../../foto/icons/tiktok.svg" alt="TikTok">
-                        <span>TikTok</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="footer-col col-lg-3 col-md-6 col-12">
+                <h3 class="text-uppercase text-left">Follow Us</h3>
+                <ul class="social-links list-unstyled">
+                    <li>
+                        <a href="#facebook" id="facebook">
+                            <img src="../../foto/icons/facebook.svg" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#instagram" id="instagram">
+                            <img src="../../foto/icons/instagram.svg" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tiktok" id="tiktok">
+                            <img src="../../foto/icons/tiktok.svg" alt="TikTok">
+                            <span>TikTok</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="footer-bottom">
         <p>&copy; 2026 Preferences Restaurant. All rights reserved.</p>
     </div>
-
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
